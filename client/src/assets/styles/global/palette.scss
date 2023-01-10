@@ -1,0 +1,107 @@
+$primary-color: #3b82f6;
+$secondary-color: #a855f7;
+$info-color: #0ea5e9;
+$success-color: #10b981;
+$warning-color: #f59e0b;
+$error-color: #ef4444;
+$gray-color: #6b7280;
+$white-color: white;
+$black-color: black;
+
+$colors: (
+  primary: (
+    50: lighten($primary-color, 50),
+    100: lighten($primary-color, 40),
+    200: lighten($primary-color, 30),
+    300: lighten($primary-color, 20),
+    400: lighten($primary-color, 10),
+    500: darken($primary-color, 0),
+    600: darken($primary-color, 10),
+    700: darken($primary-color, 20),
+    800: darken($primary-color, 30),
+    900: darken($primary-color, 40),
+  ),
+  secondary: (
+    50: lighten($secondary-color, 50),
+    100: lighten($secondary-color, 40),
+    200: lighten($secondary-color, 30),
+    300: lighten($secondary-color, 20),
+    400: lighten($secondary-color, 10),
+    500: darken($secondary-color, 0),
+    600: darken($secondary-color, 10),
+    700: darken($secondary-color, 20),
+    800: darken($secondary-color, 30),
+    900: darken($secondary-color, 40),
+  ),
+  info: (
+    50: lighten($info-color, 50),
+    100: lighten($info-color, 40),
+    200: lighten($info-color, 30),
+    300: lighten($info-color, 20),
+    400: lighten($info-color, 10),
+    500: darken($info-color, 0),
+    600: darken($info-color, 10),
+    700: darken($info-color, 20),
+    800: darken($info-color, 30),
+    900: darken($info-color, 40),
+  ),
+  success: (
+    50: lighten($success-color, 50),
+    100: lighten($success-color, 40),
+    200: lighten($success-color, 30),
+    300: lighten($success-color, 20),
+    400: lighten($success-color, 10),
+    500: darken($success-color, 0),
+    600: darken($success-color, 10),
+    700: darken($success-color, 20),
+    800: darken($success-color, 30),
+    900: darken($success-color, 40),
+  ),
+  warning: (
+    50: lighten($warning-color, 50),
+    100: lighten($warning-color, 40),
+    200: lighten($warning-color, 30),
+    300: lighten($warning-color, 20),
+    400: lighten($warning-color, 10),
+    500: darken($warning-color, 0),
+    600: darken($warning-color, 10),
+    700: darken($warning-color, 20),
+    800: darken($warning-color, 30),
+    900: darken($warning-color, 40),
+  ),
+  error: (
+    50: lighten($error-color, 50),
+    100: lighten($error-color, 40),
+    200: lighten($error-color, 30),
+    300: lighten($error-color, 20),
+    400: lighten($error-color, 10),
+    500: darken($error-color, 0),
+    600: darken($error-color, 10),
+    700: darken($error-color, 20),
+    800: darken($error-color, 30),
+    900: darken($error-color, 40),
+  ),
+  gray: (
+    50: lighten($gray-color, 50),
+    100: lighten($gray-color, 40),
+    200: lighten($gray-color, 30),
+    300: lighten($gray-color, 20),
+    400: lighten($gray-color, 10),
+    500: darken($gray-color, 0),
+    600: darken($gray-color, 10),
+    700: darken($gray-color, 20),
+    800: darken($gray-color, 30),
+    900: darken($gray-color, 40),
+  ),
+  white: (
+    500: $white-color,
+  ),
+  black: (
+    500: $black-color,
+  ),
+);
+
+@function getColor($base, $shade: 500) {
+  $color: map-get(map-get($colors, $base), $shade);
+  @return $color;
+}

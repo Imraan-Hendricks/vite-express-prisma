@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: getColor(gray, 50);
+
+  nav {
+    @include container;
+    margin-left: auto;
+    margin-right: auto;
+
+    ul {
+      display: flex;
+
+      li {
+        a {
+          @include body1;
+          display: block;
+          color: getColor(black);
+          margin-right: 1.25rem;
+          padding: 1.25rem 2rem;
+
+          &.active {
+            color: getColor(primary, 500);
+          }
+
+          &:hover {
+            color: getColor(white);
+            background-color: getColor(primary, 500);
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  background-color: getColor(gray, 50);
+  padding: 1.25rem 2rem;
+
+  h1 {
+    @include body1;
+  }
+}

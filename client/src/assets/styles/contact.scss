@@ -1,0 +1,10 @@
+@import './global/global';
+
+#contactForm {
+  h1 {
+    @include h1;
+  }
+  button {
+    @include btn-primary;
+  }
+}

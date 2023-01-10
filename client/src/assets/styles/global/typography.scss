@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+@mixin h1 {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 4.5rem;
+  line-height: 1.167;
+  letter-spacing: -0.01562em;
+  @media only screen and (min-width: 640px) {
+    font-size: 6rem;
+  }
+}
+
+@mixin h2 {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: -0.00833em;
+  @media only screen and (min-width: 640px) {
+    font-size: 3.75rem;
+  }
+}
+
+@mixin h3 {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 1.167;
+  letter-spacing: 0em;
+  @media only screen and (min-width: 640px) {
+    font-size: 3rem;
+  }
+}
+
+@mixin h4 {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 1.235;
+  letter-spacing: 0.00735em;
+  @media only screen and (min-width: 640px) {
+    font-size: 2.125rem;
+  }
+}
+
+@mixin h5 {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.334;
+  letter-spacing: 0em;
+  @media only screen and (min-width: 640px) {
+    font-size: 1.5rem;
+  }
+}
+
+@mixin h6 {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  @media only screen and (min-width: 640px) {
+    font-size: 1.25rem;
+  }
+}
+
+@mixin subtitle1 {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.00938em;
+  @media only screen and (min-width: 640px) {
+    font-size: 1rem;
+  }
+}
+
+@mixin subtitle2 {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.57;
+  letter-spacing: 0.00714em;
+  @media only screen and (min-width: 640px) {
+    font-size: 0.875rem;
+  }
+}
+
+@mixin body1 {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  @media only screen and (min-width: 640px) {
+    font-size: 1rem;
+  }
+}
+
+@mixin body2 {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  @media only screen and (min-width: 640px) {
+    font-size: 0.875rem;
+  }
+}
+
+@mixin button {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  @media only screen and (min-width: 640px) {
+    font-size: 0.875rem;
+  }
+}
+
+@mixin caption {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.65rem;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+  @media only screen and (min-width: 640px) {
+    font-size: 0.75rem;
+  }
+}
+
+@mixin overline {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.65rem;
+  line-height: 2.66;
+  letter-spacing: 0.08333em;
+  @media only screen and (min-width: 640px) {
+    font-size: 0.75rem;
+  }
+}
+
+body {
+  @include body1;
+}

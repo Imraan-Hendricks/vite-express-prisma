@@ -1,0 +1,45 @@
+# npm
+/node_modules
+/client/node_modules
+/server/node_modules
+*.log
+*.gz
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Coveralls
+/coverage
+/client/coverage
+/server/coverage
+
+# Production
+/build
+/client/build
+/server/build
+
+# Environment Variables
+.env
+.env.development
+.env.production
+.env.test
+
+# Misc
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log
+
+# prisma
+/server/.env
+/server/prisma/.env
+/server/prisma/dev.db
+/server/prisma/dev.db-journal
+/server/prisma/schema.prisma
+
+# custom
+/server/src/utils/env-utils.ts
+/server/src/lib/utils/env-utils.ts

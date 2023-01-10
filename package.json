@@ -1,0 +1,21 @@
+{
+  "name": "vite-express-prisma",
+  "version": "0.1.0",
+  "author": "Imraan-Hendricks",
+  "description": "Vanilla TypeScript client side using Vite coupled with an Express backend",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Imraan-Hendricks/vite-express-prisma"
+  },
+  "scripts": {
+    "setup": "npm ci && cd ./server && npm ci && cd ../client && npm ci",
+    "build": "cd ./server && npm run build && cd ../client && npm run build",
+    "dev": "concurrently \"cd ./server && npm run dev\" \"cd ./client && npm run dev\"",
+    "start": "cd ./server && npm start"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
